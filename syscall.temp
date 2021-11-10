@@ -1,0 +1,11 @@
+- `fork()`
+
+System call `fork()` is used to create processes. 
+It takes no arguments and returns a process ID. 
+The purpose of `fork()` is to create a new process, which becomes the child process of the caller.
+After a new child process is created, both processes will execute the next instruction following the `fork()` system call.
+This can be done by testing the returned value of `fork()`.
+
+- If `fork()` returns a negative value, the creation of process was unsuccessful.
+- If `fork()` returns zero(0), then child has created.
+- If `fork()` returns positive value, which is the process ID of the child process, to the parent.

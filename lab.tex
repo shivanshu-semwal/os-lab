@@ -1,0 +1,180 @@
+\documentclass{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\ttfamily\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  % captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  %firstnumber=1000,                % start line enumeration with line 1000
+  %frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  %language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  %numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  %numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  %stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=4,	                   % sets default tabsize to 2 spaces
+}
+
+\begin{document}
+
+\tableofcontents
+
+\newpage
+
+\section{Week 1: Demonstration of fork() System Call}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week1.1.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week1.1.txt}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week1.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week1.2.txt}
+
+\newpage
+\section{Week 2: Parent Process Computes the Sum Of Even and Child Process Computes the sum of Odd Numbers using fork}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week2.txt}
+
+\newpage
+\section{Week 3: Demonstration of wait() System Call}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week3.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week3.txt}
+
+\newpage
+\section{Week 4: Implementation of Orphan Process \& Zombie Process}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week4.1.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week4.1.txt}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week4.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week4.2.txt}
+
+\newpage
+\section{Week 5: Implementation of PIPE}
+
+\noindent \textbf{\large{Program}}
+\lstinputlisting[language=C]{labs/week5.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week5.txt}
+
+\newpage
+\section{Week 6: Implementation of FIFO}
+
+\noindent \textbf{\large{Program (Writer)}}
+\lstinputlisting[language=C]{labs/week6.1.c}
+
+\noindent \textbf{\large{Program (Reader)}}
+\lstinputlisting[language=C]{labs/week6.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week5.txt}
+
+\newpage
+\section{Week 7: Implementation of Message Queue}
+
+\noindent \textbf{\large{Program (Writer)}}
+\lstinputlisting[language=C]{labs/week7.1.c}
+
+\noindent \textbf{\large{Program (Reader)}}
+\lstinputlisting[language=C]{labs/week7.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week5.txt}
+
+\newpage
+\section{Week 8: Implementation of Shared Memory}
+
+\noindent \textbf{\large{Program (Writer)}}
+\lstinputlisting[language=C]{labs/week8.1.c}
+
+\noindent \textbf{\large{Program (Reader)}}
+\lstinputlisting[language=C]{labs/week8.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week5.txt}
+
+\noindent \textbf{\large{Program (Combined)}}
+\lstinputlisting[language=C]{labs/week8.3.c}
+
+\newpage
+\section{Week 9: First Come First Served Scheduling Algorithm}
+
+\noindent \textbf{\large{Program (Pointers)}}
+\lstinputlisting[language=C]{labs/week9.1.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week9.1.txt}
+
+\noindent \textbf{\large{Program (Array)}}
+\lstinputlisting[language=C]{labs/week9.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week9.2.txt}
+
+\newpage
+\section{Week 10: Shortest Job First Scheduling Algorithm}
+
+\noindent \textbf{\large{Program (Pointers)}}
+\lstinputlisting[language=C]{labs/week10.1.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week10.1.txt}
+
+\noindent \textbf{\large{Program (Array)}}
+\lstinputlisting[language=C]{labs/week10.2.c}
+
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week10.2.txt}
+
+\newpage
+\section{Week 11: Priority Scheduling Algorithm}
+
+
+\newpage
+\section{Week 12: First In First Out Page Replacement Policy}
+
+
+\newpage
+\section{Week 13: LRU Page Replacement Policy}
+
+
+\end{document}

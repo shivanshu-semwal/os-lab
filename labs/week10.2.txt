@@ -1,0 +1,15 @@
+Enter no of processes: 3
+Enter process 1 name: p1
+Enter process time: 24
+Enter process 2 name: p2
+Enter process time: 2
+Enter process 3 name: p3
+Enter process time: 3
+
+
+        p2              p3              p1
+        (2)             (3)             (24)
+(0)     --      2       --      5       --      29      -
+
+Average time: 2.333333
+Turn around time: 12.000000

@@ -1,0 +1,19 @@
+Enter number of processes: 3
+Enter the process name : p1
+Enter Burst time : 24
+Enter arrival time : 0
+Enter the process name : p2
+Enter Burst time : 3
+Enter arrival time : 0
+Enter the process name : p3
+Enter Burst time : 3
+Enter arrival time : 0
+Executing processes: 
+
+
+        p1              p2              p3
+        (24)            (3)             (3)
+(0)     --      (24)    --      (27)    --      (30)    -
+
+Average wait time = 17
+Turn around time = 27.000000
