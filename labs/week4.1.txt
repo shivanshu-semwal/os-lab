@@ -1,0 +1,11 @@
+I'm Parent. My Child PID = 527315 And my PID = 527314
+Terminating PID = 527314
+
+
+
+...after certain delay
+
+
+
+I'm Child. My PID = 527315 And PPID = 1
+Terminating PID = 527315

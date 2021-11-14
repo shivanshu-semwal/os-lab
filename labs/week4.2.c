@@ -11,7 +11,7 @@ int main() {
     if (pid != 0) {
         //child
         while (1)
-            sleep(50);
+            sleep(5);
     } else {
         //parent
         exit(0);

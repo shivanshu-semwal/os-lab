@@ -76,7 +76,7 @@ void display(queue *q, int n) {
             wttime += c;
             turn += c + temp->burst;
             c = c + temp->burst;
-            printf("\t(%d)\t ", c);
+            printf("-\t(%d)\t-", c);
             temp = temp->next;
         }
         printf("\n");

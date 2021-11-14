@@ -1,0 +1,21 @@
+totoro on catbus ./os_lab/labs
+> ./a.out&
+[1] 529634
+
+totoro on catbus ./os_lab/labs
+> ps
+    PID TTY          TIME CMD
+ 528784 pts/3    00:00:01 zsh
+ 529634 pts/3    00:00:00 a.out
+ 529636 pts/3    00:00:00 a.out <defunct>
+ 529664 pts/3    00:00:00 ps
+
+totoro on catbus ./os_lab/labs
+> kill  529634
+
+[1]  + terminated  ./a.out
+totoro on catbus ./os_lab/labs
+> ps
+    PID TTY          TIME CMD
+ 528784 pts/3    00:00:01 zsh
+ 529743 pts/3    00:00:00 ps

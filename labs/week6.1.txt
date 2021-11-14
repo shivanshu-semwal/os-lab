@@ -1,0 +1,7 @@
+Writing for reader Process:
+shiv
+Writer process write 5 bytes: shiv
+
+shiv
+Writer process write 5 bytes: shiv
+^C

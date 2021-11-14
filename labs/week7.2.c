@@ -28,7 +28,7 @@ int main() {
     // msgid, msgp, msg_size, msg_type, flags
     msgrcv(msgid, &svarname, sizeof(svarname), 1, 0);
 
-    printf("Data Received isL %s\n", svarname.mtext);
+    printf("Data Received is %s\n", svarname.mtext);
 
     // message queue control operation
     msgctl(msgid, IPC_RMID, NULL);

@@ -1,0 +1,4 @@
+Enter the no of terms in the array: 5
+Enter values in the array: 1 2 3 4 5
+Sum of even nos = 6
+Sum of odd no. = 9

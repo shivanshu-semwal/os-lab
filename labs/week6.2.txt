@@ -1,0 +1,6 @@
+If you got a writer process then type some data
+Reader process read 5 bytes: shiv
+
+Reader process read 5 bytes: shiv
+
+Reader process read 0 bytes:
