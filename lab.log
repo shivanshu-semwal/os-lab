@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.6)  14 NOV 2021 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.6)  14 NOV 2021 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -44,6 +44,8 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layouthoffset=\dimen141
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks15
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count178
 \lst@gtempboxa=\box45
@@ -66,15 +68,25 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count186
 \l__pdf_internal_box=\box47
@@ -104,15 +116,15 @@ LaTeX Font Info:    ... okay on input line 37.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(81.94394pt, 433.62pt, 81.94394pt)
-* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* h-part:(L,W,R)=(63.87643pt, 469.75499pt, 63.87645pt)
+* v-part:(T,H,B)=(92.30072pt, 614.295pt, 138.45113pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=433.62pt
-* \textheight=578.15999pt
-* \oddsidemargin=9.67395pt
-* \evensidemargin=9.67395pt
-* \topmargin=-2.51526pt
+* \textwidth=469.75499pt
+* \textheight=614.295pt
+* \oddsidemargin=-8.39355pt
+* \evensidemargin=-8.39355pt
+* \topmargin=-16.96927pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -154,20 +166,24 @@ LaTeX Font Info:    ... okay on input line 37.
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-) (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.c) (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.c) (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.txt) [2] (/media/totoro/Data/Programming/github/os_lab/labs/week2.c) (/media/totoro/Data/Programming/github/os_lab/labs/week2.txt) [3] (/media/totoro/Data/Programming/github/os_lab/labs/week3.c) (/media/totoro/Data/Programming/github/os_lab/labs/week3.txt) [4] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.c) (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.c) (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.txt) [5] (/media/totoro/Data/Programming/github/os_lab/labs/week5.c) (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [6] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.c) (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.c [7]) (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [8] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.c) (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.c [9]) (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [10] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.c) (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.c [11]) (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.c) [12] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.c [13]) (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.txt [14]) (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.c) [15] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.txt) [16] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.c [17]) (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.txt [18]) (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.c [19]) (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.txt) [20] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.c [21]) (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.txt [22]) (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.c [23]) (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.txt) [24] (/media/totoro/Data/Programming/github/os_lab/labs/week12.c [25]) (/media/totoro/Data/Programming/github/os_lab/labs/week12.txt) [26] (/media/totoro/Data/Programming/github/os_lab/labs/week13.c [27]) (/media/totoro/Data/Programming/github/os_lab/labs/week13.txt [28]) [29] (/media/totoro/Data/Programming/github/os_lab/lab.aux) ) 
+)
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 46.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.c) [2] (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.txt) [3] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.c) [4] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.txt) [5] (/media/totoro/Data/Programming/github/os_lab/labs/week2.c [6]) [7] (/media/totoro/Data/Programming/github/os_lab/labs/week2.txt) [8] (/media/totoro/Data/Programming/github/os_lab/labs/week3.c) [9] (/media/totoro/Data/Programming/github/os_lab/labs/week3.txt) [10] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.c) [11] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.txt) [12] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.c) [13] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.txt) [14] (/media/totoro/Data/Programming/github/os_lab/labs/week5.c) [15] (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [16] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.c) [17] (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.c) [18] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.txt) [19] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.c) [20] (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.c) [21] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.txt) [22] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.c) [23] (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.c) [24] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.txt) [25] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.c) [26] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.txt) [27] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.c [28] [29]) [30] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.txt) [31] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.c [32]) [33] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.txt) [34] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.c [35] [36]) [37] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.txt) [38] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.c [39]) [40] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.txt) [41] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.c [42] [43]) [44] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.txt) [45] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.c [46]) [47] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.txt) [48] (/media/totoro/Data/Programming/github/os_lab/labs/week12.c [49] [50]) [51] (/media/totoro/Data/Programming/github/os_lab/labs/week12.txt) [52] (/media/totoro/Data/Programming/github/os_lab/labs/week13.c [53] [54]) [55] (/media/totoro/Data/Programming/github/os_lab/labs/week13.txt) [56] (/media/totoro/Data/Programming/github/os_lab/lab.aux) ) 
 Here is how much of TeX's memory you used:
- 3616 strings out of 481239
- 52485 string characters out of 5920377
- 697736 words of memory out of 5000000
- 18803 multiletter control sequences out of 15000+600000
- 534193 words of font info for 31 fonts, out of 8000000 for 9000
+ 4217 strings out of 481239
+ 59527 string characters out of 5920377
+ 648449 words of memory out of 5000000
+ 19388 multiletter control sequences out of 15000+600000
+ 534587 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 31i,6n,53p,270b,1716s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /media/totoro/Data/Programming/github/os_lab/lab.pdf (29 pages, 119093 bytes).
+ 30i,6n,53p,270b,1705s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on /media/totoro/Data/Programming/github/os_lab/lab.pdf (56 pages, 119768 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 203 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

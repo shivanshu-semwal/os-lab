@@ -1,26 +1,26 @@
 \documentclass{article}
 
-\usepackage[a4paper, total={6in, 8in}]{geometry}
-
+\usepackage[a4paper, total={6.5in, 8.5in}]{geometry}
+\usepackage{courier}
 \usepackage{listings}
-\usepackage{color}
+\usepackage{xcolor}
 
-\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\definecolor{mygreen}{rgb}{0.05,0.15,0.11}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstset{ 
+\lstset{
   backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-  basicstyle=\ttfamily\footnotesize,        % the size of the fonts that are used for the code
+  basicstyle=\ttfamily\large,        % the size of the fonts that are used for the code
   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
   breaklines=true,                 % sets automatic line breaking
   % captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
+  commentstyle=\color{darkgray},    % comment style
   %firstnumber=1000,                % start line enumeration with line 1000
   %frame=single,	                   % adds a frame around the code
   keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
   keywordstyle=\color{blue},       % keyword style
-  %language=Octave,                 % the language of the code
   morekeywords={*,...},            % if you want to add more keywords to the set
   %numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
   %numbersep=5pt,                   % how far the line-numbers are from the code
@@ -45,12 +45,15 @@
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week1.1.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week1.1.txt}
 
+\newpage
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week1.2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week1.2.txt}
 
@@ -60,6 +63,7 @@
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week2.txt}
 
@@ -69,6 +73,7 @@
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week3.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week3.txt}
 
@@ -78,12 +83,15 @@
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week4.1.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week4.1.txt}
 
+\newpage
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week4.2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week4.2.txt}
 
@@ -93,6 +101,7 @@
 \noindent \textbf{\large{Program}}
 \lstinputlisting[language=C]{labs/week5.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week5.txt}
 
@@ -102,11 +111,16 @@
 \noindent \textbf{\large{Program (Writer)}}
 \lstinputlisting[language=C]{labs/week6.1.c}
 
+\newpage
 \noindent \textbf{\large{Program (Reader)}}
 \lstinputlisting[language=C]{labs/week6.2.c}
 
-\noindent \textbf{\large{Output}}
-\lstinputlisting{labs/week5.txt}
+\newpage
+\noindent \textbf{\large{Output} on Terminal 1 (writer)}
+\lstinputlisting{labs/week6.1.txt}
+
+\noindent \textbf{\large{Output} on Terminal 2 (reader)}
+\lstinputlisting{labs/week6.2.txt}
 
 \newpage
 \section{Week 7: Implementation of Message Queue}
@@ -114,11 +128,16 @@
 \noindent \textbf{\large{Program (Writer)}}
 \lstinputlisting[language=C]{labs/week7.1.c}
 
+\newpage
 \noindent \textbf{\large{Program (Reader)}}
 \lstinputlisting[language=C]{labs/week7.2.c}
 
-\noindent \textbf{\large{Output}}
-\lstinputlisting{labs/week5.txt}
+\newpage
+\noindent \textbf{\large{Output} on Terminal 1 (writer)}
+\lstinputlisting{labs/week7.1.txt}
+
+\noindent \textbf{\large{Output} on Terminal 2 (reader)} 
+\lstinputlisting{labs/week7.2.txt}
 
 \newpage
 \section{Week 8: Implementation of Shared Memory}
@@ -126,14 +145,24 @@
 \noindent \textbf{\large{Program (Writer)}}
 \lstinputlisting[language=C]{labs/week8.1.c}
 
+\newpage
 \noindent \textbf{\large{Program (Reader)}}
 \lstinputlisting[language=C]{labs/week8.2.c}
 
-\noindent \textbf{\large{Output}}
-\lstinputlisting{labs/week5.txt}
+\newpage
+\noindent \textbf{\large{Output} on Terminal 1 (writer)}
+\lstinputlisting{labs/week8.1.txt} 
 
+\noindent \textbf{\large{Output} on Terminal 2 (reader)}
+\lstinputlisting{labs/week8.2.txt}
+
+\newpage
 \noindent \textbf{\large{Program (Combined)}}
 \lstinputlisting[language=C]{labs/week8.3.c}
+
+\newpage
+\noindent \textbf{\large{Output}}
+\lstinputlisting{labs/week8.3.txt}
 
 \newpage
 \section{Week 9: First Come First Served Scheduling Algorithm}
@@ -141,12 +170,15 @@
 \noindent \textbf{\large{Program (Pointers)}}
 \lstinputlisting[language=C]{labs/week9.1.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week9.1.txt}
 
+\newpage
 \noindent \textbf{\large{Program (Array)}}
 \lstinputlisting[language=C]{labs/week9.2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week9.2.txt}
 
@@ -156,12 +188,15 @@
 \noindent \textbf{\large{Program (Pointers)}}
 \lstinputlisting[language=C]{labs/week10.1.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week10.1.txt}
 
+\newpage
 \noindent \textbf{\large{Program (Array)}}
 \lstinputlisting[language=C]{labs/week10.2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week10.2.txt}
 
@@ -171,12 +206,15 @@
 \noindent \textbf{\large{Program (Pointers)}}
 \lstinputlisting[language=C]{labs/week11.1.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week11.1.txt}
 
+\newpage
 \noindent \textbf{\large{Program (Array)}}
 \lstinputlisting[language=C]{labs/week11.2.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week11.2.txt}
 
@@ -186,6 +224,7 @@
 \noindent \textbf{\large{Program (Pointers)}}
 \lstinputlisting[language=C]{labs/week12.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week12.txt}
 
@@ -195,6 +234,7 @@
 \noindent \textbf{\large{Program (Pointers)}}
 \lstinputlisting[language=C]{labs/week13.c}
 
+\newpage
 \noindent \textbf{\large{Output}}
 \lstinputlisting{labs/week13.txt}
 

@@ -1,15 +1,36 @@
 # Operating System Practical
 
 - Week1: Demonstration of `fork()` System Call
+  - [code](./labs/week1.1.c) / [output](./labs/week1.1.txt)
 - Week 2: Parent Process Computes The Sum Of Even And Child Process Computes The Sum Of Odd Numbers Using fork
+  - [code](./labs/week1.2.c) / [output](./labs/week1.2.txt)
 - Week 3: Demonstration of `wait()` System Call
+  - [code](./labs/week3.1.c) / [output](./labs/week3.1.txt)
 - Week 4: Implementation Of Orphan Process & Zombie Process
+  - Orphan process [code](./labs/week4.1.c) / [output](./labs/week4.1.txt)
+  - Zombie process [code](./labs/week4.2.c) / [output](./labs/week4.2.txt)
 - Week 5: Implementation Of Pipe
+  - [code](./labs/week5.1.c) / [output](./labs/week5.1.txt)
 - Week 6: Implementation Of FIFO
+  - Writer [code](./labs/week6.1.c) / [output](./labs/week6.1.txt)
+  - Reader [code](./labs/week6.2.c) / [output](./labs/week6.2.txt)
 - Week 7: Implementation Of Message Queue
+  - Writer [code](./labs/week7.1.c) / [output](./labs/week7.1.txt)
+  - Reader [code](./labs/week7.2.c) / [output](./labs/week7.2.txt)
 - Week 8: Implementation Of Shared Memory
+  - Writer [code](./labs/week8.1.c) / [output](./labs/week8.1.txt)
+  - Reader [code](./labs/week8.2.c) / [output](./labs/week8.2.txt)
+  - Writer+Reader [code](./labs/week8.3.c) / [output](./labs/week8.3.txt)
 - Week 9: First Come First Served Scheduling Algorithm
+  - Pointers [code](./labs/week9.1.c) / [output](./labs/week9.1.txt)
+  - Array [code](./labs/week9.2.c) / [output](./labs/week9.2.txt)
 - Week 10: Shortest Job First Scheduling Algorithm
+  - Pointers [code](./labs/week10.1.c) / [output](./labs/week10.1.txt)
+  - Array [code](./labs/week10.2.c) / [output](./labs/week10.2.txt)
 - Week 11: Priority Scheduling Algorithm
+  - Pointer [code](./labs/week11.1.c) / [output](./labs/week11.1.txt)
+  - Array [code](./labs/week11.1.c) / [output](./labs/week11.1.txt)
 - Week 12: First In First Out Page Replacement Policy
+  - [code](./labs/week12.1.c) / [output](./labs/week12.1.txt)
 - Week 13: LRU Page Replacement Policy
+  - [code](./labs/week13.1.c) / [output](./labs/week13.1.txt)

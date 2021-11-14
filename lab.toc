@@ -1,13 +1,13 @@
 \contentsline {section}{\numberline {1}Week 1: Demonstration of fork() System Call}{2}%
-\contentsline {section}{\numberline {2}Week 2: Parent Process Computes the Sum Of Even and Child Process Computes the sum of Odd Numbers using fork}{3}%
-\contentsline {section}{\numberline {3}Week 3: Demonstration of wait() System Call}{4}%
-\contentsline {section}{\numberline {4}Week 4: Implementation of Orphan Process \& Zombie Process}{5}%
-\contentsline {section}{\numberline {5}Week 5: Implementation of PIPE}{6}%
-\contentsline {section}{\numberline {6}Week 6: Implementation of FIFO}{7}%
-\contentsline {section}{\numberline {7}Week 7: Implementation of Message Queue}{9}%
-\contentsline {section}{\numberline {8}Week 8: Implementation of Shared Memory}{11}%
-\contentsline {section}{\numberline {9}Week 9: First Come First Served Scheduling Algorithm}{13}%
-\contentsline {section}{\numberline {10}Week 10: Shortest Job First Scheduling Algorithm}{17}%
-\contentsline {section}{\numberline {11}Week 11: Priority Scheduling Algorithm}{21}%
-\contentsline {section}{\numberline {12}Week 12: First In First Out Page Replacement Policy}{25}%
-\contentsline {section}{\numberline {13}Week 13: LRU Page Replacement Policy}{27}%
+\contentsline {section}{\numberline {2}Week 2: Parent Process Computes the Sum Of Even and Child Process Computes the sum of Odd Numbers using fork}{6}%
+\contentsline {section}{\numberline {3}Week 3: Demonstration of wait() System Call}{9}%
+\contentsline {section}{\numberline {4}Week 4: Implementation of Orphan Process \& Zombie Process}{11}%
+\contentsline {section}{\numberline {5}Week 5: Implementation of PIPE}{15}%
+\contentsline {section}{\numberline {6}Week 6: Implementation of FIFO}{17}%
+\contentsline {section}{\numberline {7}Week 7: Implementation of Message Queue}{20}%
+\contentsline {section}{\numberline {8}Week 8: Implementation of Shared Memory}{23}%
+\contentsline {section}{\numberline {9}Week 9: First Come First Served Scheduling Algorithm}{28}%
+\contentsline {section}{\numberline {10}Week 10: Shortest Job First Scheduling Algorithm}{35}%
+\contentsline {section}{\numberline {11}Week 11: Priority Scheduling Algorithm}{42}%
+\contentsline {section}{\numberline {12}Week 12: First In First Out Page Replacement Policy}{49}%
+\contentsline {section}{\numberline {13}Week 13: LRU Page Replacement Policy}{53}%
