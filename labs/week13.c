@@ -1,116 +1,112 @@
+// least recently use
+// (lru) page replacement
 
-/*PAGE REPLACEMENT LRU */
-#include<stdio.h>
-#include<stdlib.h>
-#include<conio.h>
-int fsize,ssize,f,frame[10],arrive[30],rstring[30];
-int main()
-{
-int i,lfi,idx,cs=0,f,ls=0,pf=0,j=0,y,k,z=0,time=0;
-int pagefound (int x);
-void display();
-int leastused();
-int pagelocation(int x);
-clrscr();
-printf("\n\n\t\t LRU PAGE REPLACEMENT");
-printf("\n\t\t --------------------");
-printf("\n\n\t Enter the frame size:");
-scanf("%d",&fsize);
-printf("\n\t Enter the reference string size:");
-scanf("%d",&ssize);
-printf("\n\t Enter the reference string:");
-for(i=0;i<ssize;i++)
-scanf("%d",&rstring[i]);
-for(k=0;k<fsize;k++)
-{
-frame[k]=-3;
-arrive[k]=0;
-}
-for(i=0;i<ssize;i++)
-{
-y=pagefound(rstring[i]);
-if(y==0)
-{
-pf++;
-if(cs>=fsize)
+#include <stdio.h>
+#include <stdlib.h>
 
-\newpage{
-lfi=leastused();
-frame [lfi]=rstring[i];
-arrive [lfi]=++time;
-}
-else if (cs<fsize)
-{
-frame[cs]=rstring[i];
-arrive [cs]=++time;
-}
-}
-else
-{
-idx=pagelocation(rstring[i]);
-arrive [idx]=++time;
-}
-cs++;
-display();
-}
-printf("\n Page fault=%d",pf);
-}
-int pagefound(int x)
-{
-int i,val=0;
-for(i=0;i<fsize;i++)
-{
-if(x==frame[i])
-{
-val=1;
-break;
-}
-}
-return(val);
-}
-void display()
-{
-int i;
+int fsize;       // frame size
+int ssize;       // reference string size
+int rstring[30]; // reference string
+int frame[10];   // list to store the pages
+int arrive[30];  // arrive time for the pages
 
-\newpageprintf("\n");
-for(i=0;i<fsize;i++)
-{
-if(frame[i]>=0)
-{
-printf("%d",frame[i]);
-}
-else
-printf("\t");
-}
-}
-int leastused()
-{
-int i,min=0,n=0;
-for(i=1;i<fsize;i++)
-{
-if(arrive[i]<arrive[min])
-{
-min=i;
-n++;
-}
-}
-if(n==0)
-return(0);
-else
-return(min);
-}
-int pagelocation(int pageno)
-{
-int i,flag=0;
-for(i=0;i<fsize;i++)
-{
-if(frame[i]==pageno)
-{
-flag=1;
-break;
+/* return 1 if page is found in the list */
+int pagefound(int x) {
+    for (int i = 0; i < fsize; i++) {
+        if (x == frame[i]) {
+            return 1;
+        }
+    }
+    return 0;
 }
 
-\newpage}
-return(i);
-getch();
+/* display the list */
+void display() {
+    int i;
+    for (i = 0; i < fsize; i++) {
+        if (frame[i] >= 0) {
+            printf("%d ", frame[i]);
+        } else
+            printf("_ ");
+    }
+}
+
+/* returns the index of page with least arrival time */
+int leastused() {
+    int i, min = 0;
+    for (i = 0; i < fsize; i++) {
+        if (arrive[i] < arrive[min]) {
+            min = i;
+        }
+    }
+    return min;
+}
+
+/* return the index at which pageno is located */
+int pagelocation(int pageno) {
+    int i;
+    for (i = 0; i < fsize; i++) {
+        if (frame[i] == pageno) {
+            return i;
+        }
+    }
+    return i;
+}
+
+int main() {
+    int pf = 0; // no of page faults
+    int cs = 0; // current size
+    int lfi;    // last recently used page index
+    int i, idx;
+    int f, ls = 0;
+    int j = 0, y, k, z = 0, time = 0;
+
+    printf("LRU Page Replacement\n");
+
+    printf("Enter the frame size: ");
+    scanf("%d", &fsize);
+
+    printf("Enter the reference string size: ");
+    scanf("%d", &ssize);
+
+    printf("Enter the reference string: ");
+    for (i = 0; i < ssize; i++)
+        scanf("%d", &rstring[i]);
+
+    // initilise time and frame for page
+    for (k = 0; k < fsize; k++) {
+        frame[k] = -3;
+        arrive[k] = 0;
+    }
+
+    for (i = 0; i < ssize; i++) {
+        y = pagefound(rstring[i]);
+        if (y == 0) {
+            // page fault
+            pf++;
+            if (cs >= fsize) {
+                // replace with lru page
+                lfi = leastused();
+                frame[lfi] = rstring[i];
+                arrive[lfi] = ++time;
+            } else if (cs < fsize) {
+                // if list still have some space
+                frame[cs] = rstring[i];
+                arrive[cs] = ++time;
+            }
+            display();
+            printf("\tMiss! %d\n", rstring[i]);
+        } else {
+            // page found
+            idx = pagelocation(rstring[i]);
+            arrive[idx] = ++time;
+            display();
+            printf("\tHit!! %d\n", rstring[i]);
+        }
+        cs++;
+    }
+
+    printf("Page fault=%d\n", pf);
+
+    return 0;
 }

@@ -1,0 +1,17 @@
+FIFO page replacement
+Enter the size of reference string: 12
+Enter the reference string: 0 2 1 6 4 0 1 0 3 1 2 1
+Enter the number of free frames: 4
+0 _ _ _         Miss! 0
+0 2 _ _         Miss! 2
+0 2 1 _         Miss! 1
+0 2 1 6         Miss! 6
+4 2 1 6         Miss! 4
+4 0 1 6         Miss! 0
+4 0 1 6         Hit!! 1
+4 0 1 6         Hit!! 0
+4 0 3 6         Miss! 3
+4 0 3 1         Miss! 1
+2 0 3 1         Miss! 2
+2 0 3 1         Hit!! 1
+No of page faults: 9

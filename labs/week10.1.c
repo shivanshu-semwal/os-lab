@@ -54,7 +54,9 @@ void display(queue *q, int n) {
     int c = 0;
     float turn = 0.0, wttime = 0.0;
     if (q->front != NULL) {
-        // queue is not empty
+
+        // Make Gantt chart
+
         printf("\n\n");
         while (temp != NULL) {
             printf("\t%s\t", temp->name);

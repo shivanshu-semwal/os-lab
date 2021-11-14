@@ -1,116 +1,112 @@
+// priority scheduling
 
-#include<stdio.h>
-#include<malloc.h>
-#include<string.h>
-typedefstruct node
-{
-charprss[3];
-int burst;
-int priority;
-struct node *next;
-}node;
-node *front=NULL;
-node *rear=NULL;
-void insert();
-void display(int);
-void main()
-{
-int i,n;
-printf("\nEnter number of processes : ");
-scanf("%d",&n);
-for(i=0;i<n;i++)
-insert();
-printf("\n\nExecuting processes : \n");
-display(n);
-printf("\n");
+#include <malloc.h>
+#include <stdio.h>
+#include <string.h>
+
+typedef struct node {
+    char process[3];
+    int burst;
+    int priority;
+    struct node *next;
+} node;
+
+typedef struct queue {
+    node *front;
+    node *rear;
+} queue;
+
+void insert(queue *q) {
+    node *p, *temp;
+    int b, pri;
+
+    p = (node *)malloc(sizeof(node));
+
+    printf("Enter the process name: ");
+    scanf("%s", p->process);
+
+    printf("Enter Burst time: ");
+    scanf("%d", &(p->burst));
+
+    printf("Enter Priority: ");
+    scanf("%d", &(p->priority));
+    p->next = NULL;
+
+    /*
+        inserting the new node so
+        it is sorted according to
+        priority
+    */
+
+    if (q->front == NULL) {
+        // first element
+        q->front = p;
+        q->rear = p;
+    } else if (p->priority < q->front->priority) {
+        // at start
+        p->next = q->front;
+        q->front = p;
+    } else if (p->priority > q->rear->priority) {
+        // at end
+        q->rear->next = p;
+        q->rear = p;
+    } else {
+        // in between
+        temp = q->front;
+        while (p->priority > (temp->next)->priority)
+            temp = temp->next;
+        p->next = temp->next;
+        temp->next = p;
+    }
+}
+void display(queue *q, int n) {
+    node *temp;
+    int c = 0;
+    float turn = 0.0, wttime = 0.0;
+
+    if (q->front != NULL) {
+
+        // Make Gantt chart
+        
+        temp = q->front;
+        printf("\n\n");
+        while (temp != NULL) {
+            printf("\t%s\t", temp->process);
+            temp = temp->next;
+        }
+
+        temp = q->front;
+        printf("\n");
+        while (temp != NULL) {
+            printf("\t(%d)\t ", temp->burst);
+            temp = temp->next;
+        }
+
+        temp = q->front;
+        printf("\n(0)\t-");
+        while (temp != NULL) {
+            wttime += c;
+            turn += c + temp->burst;
+            c = c + temp->burst;
+            printf("-\t(%d)\t-", c);
+            temp = temp->next;
+        }
+        printf("\n\n");
+        printf("Average wait time = %f\n", wttime / n);
+        printf("Turn around time = %f\n", turn / n);
+    }
 }
 
-//HEADER FILES
+int main() {
+    int i, n;
+    queue *q = (queue *)malloc(sizeof(queue));
+    printf("Enter number of processes: ");
+    scanf("%d", &n);
 
-//STRUCTURE
+    for (i = 0; i < n; i++)
+        insert(q);
 
-//GLOBAL VARIABLES
-//FUNCTION DECLARATION
-//MAIN FUNCTION
-
-//LOOP
-//FUNCTION CALL
-//FUNCTION CALL
-//END OF MAIN
-
-\newpagevoid insert()
-//FUNCTION DEFINITION
-{
-node *p,*temp;
-int b,pri;
-p=(node*)malloc(sizeof(node)); //DYNAMIC MEMORY ALLOCATION
-printf("\n\tEnter the process name : ");
-scanf("%s",p->prss);
-printf("\tEnter Burst time : ");
-scanf("%d",&b); printf("\tEnter
-Priority : "); scanf("%d",&pri); p>burst=b;
-p->priority=pri;
-p->next=NULL;
-if(front==NULL)
-{
-front=p;
-rear=p;
-}
-else if(p->priority < front->priority)
-{
-p->next=front;
-front=p;
-}
-else if(p->priority > rear->priority)
-{
-rear->next=p;
-rear=p;
-}
-else
-{
-temp=front;
-while( p->priority > (temp->next)->priority )
-temp=temp->next;
-p->next=temp->next;
-temp->next=p;
-}
-}
-void display(int n)
-{
-node *temp=front;
-int c=0;
-float turn=0.0,wttime=0.0;
-if(front!=NULL)
-{
-
-//FUNCTION DEFINITION
-
-\newpageprintf("\n-------------------------------------------------------\n\t");
-while(temp!=NULL)
-{
-printf("|\t%s\t",temp->prss);
-temp=temp->next;
-}
-printf("\n-------------------------------------------------------------------\n");
-temp=front;
-while(temp!=NULL)
-{
-printf("\t%d\t ",temp->burst);
-temp=temp->next;
-}
-printf("\n------------------------------------------------------------------\n\t");
-temp=front;
-printf("0\t");
-while(temp!=NULL)
-{
-wttime+=c;
-turn+=c+temp->burst;
-c=c+temp->burst;
-printf(" \t%d\t ",c);
-temp=temp->next;
-}
-printf("\n------------------------------------------------------------\n");
-printf("\n\nAveragewt time = %f ",wttime/n);
-printf("\nTurn around time = %f\n",turn/n);
-}
+    printf("Executing processes: \n");
+    display(q, n);
+    return 0;
 }

@@ -1,0 +1,18 @@
+LRU Page Replacement
+Enter the frame size: 4
+Enter the reference string size: 13
+Enter the reference string: 7 0 1 2 0 3 0 4 2 3 0 3 2 3
+7 _ _ _         Miss! 7
+7 0 _ _         Miss! 0
+7 0 1 _         Miss! 1
+7 0 1 2         Miss! 2
+7 0 1 2         Hit!! 0
+3 0 1 2         Miss! 3
+3 0 1 2         Hit!! 0
+3 0 4 2         Miss! 4
+3 0 4 2         Hit!! 2
+3 0 4 2         Hit!! 3
+3 0 4 2         Hit!! 0
+3 0 4 2         Hit!! 3
+3 0 4 2         Hit!! 2
+Page fault=6

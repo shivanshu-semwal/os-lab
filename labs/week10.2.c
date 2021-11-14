@@ -39,6 +39,8 @@ int main() {
         }
     }
 
+    // Make Gantt chart
+    
     printf("\n\n");
     for (i = 0; i < n; i++) {
         printf("\t%s\t", p[i]);

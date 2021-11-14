@@ -7,12 +7,11 @@
 #define SIZE 100
 
 int main() {
-    char p[SIZE][5]; // process name 
-    int pt[SIZE]; // process time
+    char p[SIZE][5]; // process name
+    int pt[SIZE];    // process time
 
     int c = 0, i, j, n;
     float at = 0.0, turn = 0.0;
-
 
     printf("Enter no of processes:");
     scanf("%d", &n);
@@ -25,6 +24,7 @@ int main() {
         scanf("%d", &pt[i]);
     }
 
+    // Make Gantt chart
 
     printf("\n");
     for (i = 0; i < n; i++) {
@@ -37,7 +37,6 @@ int main() {
         // print process time
         printf("\t(%d)\t", pt[i]);
     }
-
 
     printf("\n0\t-");
     for (i = 0; i < n; i++) {

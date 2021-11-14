@@ -1,0 +1,19 @@
+Enter number of processes: 3
+Enter the process name: p1
+Enter Burst time: 24
+Enter Priority: 3
+Enter the process name: p2
+Enter Burst time: 3
+Enter Priority: 1
+Enter the process name: p3
+Enter Burst time: 2
+Enter Priority: 2
+Executing processes: 
+
+
+        p2              p3              p1
+        (3)             (2)             (24)     
+(0)     --      (3)     --      (5)     --      (29)    -
+
+Average wait time = 2.666667
+Turn around time = 12.333333

@@ -52,13 +52,15 @@ void display(queue *q, int n) {
 
     // if queue is not empty
     if (q->front != NULL) {
+
+        // Make Gantt chart
+
         printf("\n\n");
         while (temp != NULL) {
             printf("\t%s\t", temp->pname);
             temp = temp->next;
         }
 
-        
         temp = q->front;
         printf("\n");
         while (temp != NULL) {

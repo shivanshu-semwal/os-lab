@@ -1,0 +1,18 @@
+Enter no of processes: 3
+Enter process 1 name: p1
+Enter process time: 24
+Enter the priority of process: 3
+Enter process 2 name: p2
+Enter process time: 3
+Enter the priority of process: 1
+Enter process 3 name: p3
+Enter process time: 2
+Enter the priority of process: 2
+
+
+        p2              p3              p1
+        (3)             (2)             (24)
+(0)-    -       3       --      5       --      29      -
+
+Average time: 2.666667
+Turn around time: 12.333333

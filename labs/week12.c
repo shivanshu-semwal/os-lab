@@ -1,67 +1,94 @@
-#include<stdio.h>
-#include<stdlib.h>
-#define MAX 5
-int front=0,back=-1,cs=0,nf;
-int f[MAX];
-void enq(int x);
-void deq(void);
-void dis(void);
-int isfound(int);
-void main()
-{
-int pf=0,rfs,rf[15],I;
-printf(“\n FIFO page replacement”);
-printf(“\n Enter the size of reference string:”);
-scanf(“%d”,&rfs);
-printf(“\n Enter the reference string:”);
-for(i=0;i<rfs;i++)
-{
-scanf(“%d”,&rf[i]);
-}
-printf(“\n Enter the number of free frames:”);
-scanf(“%d”,&nf);
-enq(rf[0]);
-pf=1;
-for(=0;i<rfs;i++)
-{
-if(!isfound(rf[i]))
-{
-pf++;
-if(cs==nf)
-deq();
-enq(rf[i]);
-}
-dis();
+// fifo page replacement
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct list {
+    int size; // current size of list
+    int cs;   // counter at which to insert new page
+    int nf;   // no of free pages
+    int *f;   // array to store page
+} list;
+
+list *newlist(int nf) {
+    list *l = (list *)malloc(sizeof(list));
+    l->cs = 0;
+    l->f = (int *)malloc(sizeof(int) * nf);
+    l->nf = nf;
+    return l;
 }
 
-\newpageprintf(“\n No of page faults :%d”,pf);
+int find(list *l, int x) {
+    for (int i = 0; i < l->size; i++)
+        if (l->f[i] == x)
+            return 1;
+    return 0;
 }
-int isfound(int x)
-{
-nt I;
-for(i=0;i<cs;i++)
-if(f[i]==x)
-return 1;
-return 0;
+
+/* 
+    insert the page x 
+    if full replace it with oldest page
+*/
+void insert(list *l, int x) {
+    if (l->size < l->nf) l->size++;
+    if (l->cs == l->nf)
+        // list full
+        l->cs = 0;
+    l->f[l->cs] = x;
+    l->cs++;
 }
-void enq(int x)
-{
-if(++back==nf)
-back=0;
-f[back]=x;
-cs++;
+
+void display(list *l) {
+    int i;
+    for (i = 0; i < l->size; i++)
+        printf("%d ", l->f[i]);
+    for (i = l->size; i < l->nf; i++)
+        printf("_ ");
+    // printf("\n");
 }
-void dis()
-{
-int i;
-for(i=0;<cs;i++)
-printf(“%d”,f[i]);
-printf(“\n”);
-}
-void deq()
-{
-Cs--;
-if(++front==nf)
-front=0;
-return;
+
+int main() {
+    int pf = 0; // no of page faults
+    int rfs;    // reference string length
+    int *rf;    // reference string
+    int i, nf;
+
+    printf("FIFO page replacement\n");
+
+    printf("Enter the size of reference string: ");
+    scanf("%d", &rfs);
+
+    rf = (int *)malloc(sizeof(int) * rfs);
+    printf("Enter the reference string: ");
+    for (i = 0; i < rfs; i++) {
+        scanf("%d", &rf[i]);
+    }
+
+    printf("Enter the number of free frames: ");
+    scanf("%d", &nf);
+
+    // make a list with number of pages equal to nf
+    list *l = newlist(nf);
+
+    insert(l, rf[0]);
+    display(l);
+    printf("\tMiss! %d\n", rf[0]);
+    pf = 1; // first page fault will always occur
+
+    for (i = 1; i < rfs; i++) {
+        if (!find(l, rf[i])) {
+            // element not found
+            pf++; // pagefault
+            insert(l, rf[i]);
+            display(l);
+            printf("\tMiss! %d\n", rf[i]);
+        } else {
+            display(l);
+            printf("\tHit!! %d\n", rf[i]);
+        }
+    }
+
+    printf("No of page faults: %d\n", pf);
+
+    return 0;
 }
