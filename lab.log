@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.6)  14 NOV 2021 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.6)  17 NOV 2021 06:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -156,34 +156,30 @@ LaTeX Font Info:    ... okay on input line 37.
 \MPnumerator=\count192
 \makeMPintoPDFobject=\count193
 \everyMPtoPDFconversion=\toks18
-) (/media/totoro/Data/Programming/github/os_lab/lab.toc)
-\tf@toc=\write3
-\openout3 = `lab.toc'.
-
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 48.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.c) [2] (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.txt) [3] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.c) [4] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.txt) [5] (/media/totoro/Data/Programming/github/os_lab/labs/week2.c [6]) [7] (/media/totoro/Data/Programming/github/os_lab/labs/week2.txt) [8] (/media/totoro/Data/Programming/github/os_lab/labs/week3.c) [9] (/media/totoro/Data/Programming/github/os_lab/labs/week3.txt) [10] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.c) [11] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.txt) [12] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.c) [13] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.txt) [14] (/media/totoro/Data/Programming/github/os_lab/labs/week5.c) [15] (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [16] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.c) [17] (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.c) [18] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.txt) [19] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.c) [20] (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.c) [21] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.txt) [22] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.c) [23] (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.c) [24] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.txt) [25] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.c) [26] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.txt) [27] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.c [28] [29]) [30] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.txt) [31] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.c [32]) [33] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.txt) [34] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.c [35] [36]) [37] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.txt) [38] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.c [39]) [40] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.txt) [41] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.c [42] [43]) [44] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.txt) [45] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.c [46]) [47] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.txt) [48] (/media/totoro/Data/Programming/github/os_lab/labs/week12.c [49] [50]) [51] (/media/totoro/Data/Programming/github/os_lab/labs/week12.txt) [52] (/media/totoro/Data/Programming/github/os_lab/labs/week13.c [53] [54]) [55] (/media/totoro/Data/Programming/github/os_lab/labs/week13.txt) [56] (/media/totoro/Data/Programming/github/os_lab/lab.aux) ) 
+) (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.c) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/media/totoro/Data/Programming/github/os_lab/labs/week1.1.txt) [2] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.c) [3] (/media/totoro/Data/Programming/github/os_lab/labs/week1.2.txt) [4] (/media/totoro/Data/Programming/github/os_lab/labs/week2.c) [5] (/media/totoro/Data/Programming/github/os_lab/labs/week2.txt) [6] (/media/totoro/Data/Programming/github/os_lab/labs/week3.c) [7] (/media/totoro/Data/Programming/github/os_lab/labs/week3.txt) [8] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.c) [9] (/media/totoro/Data/Programming/github/os_lab/labs/week4.1.txt) [10] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.c) [11] (/media/totoro/Data/Programming/github/os_lab/labs/week4.2.txt) [12] (/media/totoro/Data/Programming/github/os_lab/labs/week5.c) [13] (/media/totoro/Data/Programming/github/os_lab/labs/week5.txt) [14] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.c) [15] (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.c) [16] (/media/totoro/Data/Programming/github/os_lab/labs/week6.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week6.2.txt) [17] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.c) [18] (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.c) [19] (/media/totoro/Data/Programming/github/os_lab/labs/week7.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week7.2.txt) [20] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.c) [21] (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.c) [22] (/media/totoro/Data/Programming/github/os_lab/labs/week8.1.txt) (/media/totoro/Data/Programming/github/os_lab/labs/week8.2.txt) [23] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.c) [24] (/media/totoro/Data/Programming/github/os_lab/labs/week8.3.txt) [25] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.c [26] [27]) [28] (/media/totoro/Data/Programming/github/os_lab/labs/week9.1.txt) [29] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.c [30]) [31] (/media/totoro/Data/Programming/github/os_lab/labs/week9.2.txt) [32] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.c [33] [34]) [35] (/media/totoro/Data/Programming/github/os_lab/labs/week10.1.txt) [36] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.c [37]) [38] (/media/totoro/Data/Programming/github/os_lab/labs/week10.2.txt) [39] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.c [40] [41]) [42] (/media/totoro/Data/Programming/github/os_lab/labs/week11.1.txt) [43] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.c [44]) [45] (/media/totoro/Data/Programming/github/os_lab/labs/week11.2.txt) [46] (/media/totoro/Data/Programming/github/os_lab/labs/week12.c [47]) [48] (/media/totoro/Data/Programming/github/os_lab/labs/week12.txt) [49] (/media/totoro/Data/Programming/github/os_lab/labs/week13.c [50] [51]) [52] (/media/totoro/Data/Programming/github/os_lab/labs/week13.txt) [53] (/media/totoro/Data/Programming/github/os_lab/lab.aux) ) 
 Here is how much of TeX's memory you used:
- 4217 strings out of 481239
- 59527 string characters out of 5920377
- 648449 words of memory out of 5000000
- 19388 multiletter control sequences out of 15000+600000
- 534587 words of font info for 32 fonts, out of 8000000 for 9000
+ 4210 strings out of 481239
+ 59378 string characters out of 5920377
+ 681469 words of memory out of 5000000
+ 19384 multiletter control sequences out of 15000+600000
+ 534073 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,6n,53p,270b,1705s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on /media/totoro/Data/Programming/github/os_lab/lab.pdf (56 pages, 119768 bytes).
+ 30i,6n,53p,269b,1676s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on /media/totoro/Data/Programming/github/os_lab/lab.pdf (53 pages, 87662 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

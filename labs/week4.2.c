@@ -9,11 +9,11 @@ int main() {
     pid = fork();
 
     if (pid != 0) {
-        //child
+        // parent
         while (1)
             sleep(5);
     } else {
-        //parent
+        //child
         exit(0);
     }
 }
